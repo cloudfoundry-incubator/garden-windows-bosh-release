@@ -1,0 +1,7 @@
+---
+name: garden-windows
+
+dependencies: []
+
+files:
+  - garden-windows/GardenWindows.tgz

@@ -1,0 +1,6 @@
+---
+name: garden-windows
+description: "Garden for Windows"
+
+packages:
+- garden-windows

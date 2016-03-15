@@ -1,0 +1,10 @@
+{
+  "processes": [
+    {
+      "name": "garden-windows",
+      "executable": "C:\\var\\vcap\\packages\\garden-windows\\garden-windows.exe",
+      "args": [ "-listenNetwork=tcp",  "-listenAddr=0.0.0.0:9241", "-containerGraceTime=5m", "-containerizerURL=http://localhost:1788" ]
+    }
+  ]
+}
+

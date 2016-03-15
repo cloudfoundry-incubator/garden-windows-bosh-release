@@ -1,0 +1,1 @@
+C:\bosh\tar.exe xf containerizer/Containerizer.tgz --strip-components=1 -C $Env:BOSH_INSTALL_TARGET

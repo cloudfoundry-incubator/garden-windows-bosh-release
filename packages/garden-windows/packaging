@@ -1,0 +1,1 @@
+C:\Bosh\tar.exe xf garden-windows/GardenWindows.tgz --strip-components=1 -C $Env:BOSH_INSTALL_TARGET

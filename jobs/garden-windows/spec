@@ -2,5 +2,11 @@
 name: garden-windows
 description: "Garden for Windows"
 
+templates:
+  containerizer.ps1: bin/containerizer.ps1
+
 packages:
 - garden-windows
+- containerizer
+
+properties: {}

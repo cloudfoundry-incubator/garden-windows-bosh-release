@@ -1,7 +1,0 @@
----
-name: containerizer
-templates:
-  start.ps1: bin/start.ps1
-
-packages:
-- containerizer

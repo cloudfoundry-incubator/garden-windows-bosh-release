@@ -1,1 +1,1 @@
-C:\var\vcap\packages\containerizer\Containerizer.exe --machineIp 127.0.0.1 --port 1788
+C:\var\vcap\packages\containerizer\Containerizer.exe --machineIp 10.10.5.68 --port 1788

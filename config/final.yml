@@ -1,4 +1,5 @@
 ---
+final_name: garden-windows
 blobstore:
   provider: s3
   options:

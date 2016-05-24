@@ -8,6 +8,5 @@ templates:
 
 packages:
 - garden-windows
-- containerizer
 
 properties: {}

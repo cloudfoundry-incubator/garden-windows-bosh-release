@@ -8,7 +8,7 @@
     {
       "name": "containerizer",
       "executable": "powershell",
-      "args": ["/var/vcap/jobs/garden-windows/bin/containerizer.ps1" ]
+      "args": ["C:\var\vcap\packages\garden-windows\Containerizer.exe","--machineIp","<%= spec.networks.default.ip %>","--port","1788"]
     }
   ]
 }

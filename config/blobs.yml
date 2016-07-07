@@ -1,8 +1,8 @@
 ---
 garden-windows/garden-windows.tgz:
-  object_id: 37f95321-94b3-4c20-a9a8-f009c52c91d0
-  sha: 64ef239e6528a6d7f168daeeea34f3900d5b95f9
-  size: 5043210
+  object_id: 2a2cfea9-aee2-4470-9f82-d9c17ecde5f9
+  sha: 054d5bbc10057145b7d2c4736497a041ff569b01
+  size: 5045727
 consul/consul-template_0.14.0_linux_amd64.zip:
   object_id: b50297f7-d2df-4367-b809-8acfc71ad537
   sha: f932301f69a477253e4e4bf3c60159ea77cf28a8

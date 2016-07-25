@@ -1,4 +1,4 @@
-C:\Bosh\tar.exe xf garden-windows\garden-windows.tgz --strip-components=1 -C $Env:BOSH_INSTALL_TARGET
+tar xf garden-windows\garden-windows.tgz --strip-components=1 -C $Env:BOSH_INSTALL_TARGET
 if ($LASTEXITCODE -ne 0) {
     Exit 1
 }

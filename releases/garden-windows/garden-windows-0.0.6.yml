@@ -1,0 +1,65 @@
+---
+packages:
+- name: confab-windows
+  version: e2eed0fd8de070198913b8abb2f155607cafba31
+  fingerprint: e2eed0fd8de070198913b8abb2f155607cafba31
+  sha1: c1193afa622320a769ff3cf3750046470ccb6c71
+  dependencies:
+  - golang1.6-windows
+- name: consul-windows
+  version: a095f92d8c35bf89533ede099ab91fd424f60447
+  fingerprint: a095f92d8c35bf89533ede099ab91fd424f60447
+  sha1: 0feb1e0ec442299878c59f444bd2f416f948acba
+  dependencies: []
+- name: garden-windows
+  version: 504768f37e50a2c6dffc47d19233d2d733f978c8
+  fingerprint: 504768f37e50a2c6dffc47d19233d2d733f978c8
+  sha1: b922e91a66bca891d872dc7e4a6ac088a2a6e9ca
+  dependencies: []
+- name: golang-windows
+  version: 4ca14257bd9fc8ee124e0c32af0127437ad03791
+  fingerprint: 4ca14257bd9fc8ee124e0c32af0127437ad03791
+  sha1: 8157e83a0f271e068e8915cd5e8db6c3d52d6be3
+  dependencies: []
+- name: golang1.6-windows
+  version: 0e0457aa5c375775274f3de473b8fd430ca7a0ac
+  fingerprint: 0e0457aa5c375775274f3de473b8fd430ca7a0ac
+  sha1: a39e20fedd9326264d33cc5a4751eab65b4803e1
+  dependencies: []
+- name: metron_agent_windows
+  version: ddb7c1c83e0857ddb419b0f71557e3e7671fbd75
+  fingerprint: ddb7c1c83e0857ddb419b0f71557e3e7671fbd75
+  sha1: 080f40436cce872736554112c573c5e3482d6fab
+  dependencies:
+  - golang1.6-windows
+- name: rep_windows
+  version: 8a5a14180161467e702bee8a2e9d259d399c7f4a
+  fingerprint: 8a5a14180161467e702bee8a2e9d259d399c7f4a
+  sha1: d5df064f25b63b9fde77bcf9032f92aca3ec5ca1
+  dependencies:
+  - golang-windows
+jobs:
+- name: consul_agent_windows
+  version: 8aca461b81220305eec290f3bcf2704caee1324c
+  fingerprint: 8aca461b81220305eec290f3bcf2704caee1324c
+  sha1: 0a4a090a774d938dcaf0610c269e4e27f2f12635
+- name: garden-windows
+  version: f9c94b598e148f86c4d33295d27d968fa05fae90
+  fingerprint: f9c94b598e148f86c4d33295d27d968fa05fae90
+  sha1: 8d0a97137315ae778aa873bf5bf5f358afd0b633
+- name: metron_agent_windows
+  version: 872f1455cba8cfcd8d920e09b7b846eacd760a0d
+  fingerprint: 872f1455cba8cfcd8d920e09b7b846eacd760a0d
+  sha1: 74dff51330aa09e9a3cd61594ddfdccf3645aac6
+- name: rep_windows
+  version: 7d9661dfa27724d54453ea3294469a69e2c16816
+  fingerprint: 7d9661dfa27724d54453ea3294469a69e2c16816
+  sha1: b18b9ccc6f77f823afabc1b1addda4178f408c80
+license:
+  version: 08f2aa9f376c717e823b012885bc61cecf8c816e
+  fingerprint: 08f2aa9f376c717e823b012885bc61cecf8c816e
+  sha1: c333ebeb352d5664fd06698db7985b78262bd397
+commit_hash: 5fbd6195
+uncommitted_changes: false
+name: garden-windows
+version: 0.0.6

@@ -5,6 +5,7 @@ description: "Garden for Windows"
 templates:
   containerizer.ps1: bin/containerizer.ps1
   pre-start.ps1: bin/pre-start.ps1
+  post-start.ps1: bin/post-start.ps1
 
 packages:
 - garden-windows

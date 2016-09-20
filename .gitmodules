@@ -5,6 +5,3 @@
 [submodule "src/consul-release"]
 	path = src/consul-release
 	url = https://github.com/greenhouse-org/consul-release.git
-[submodule "src/diego-release"]
-	path = src/diego-release
-	url = https://github.com/greenhouse-org/diego-release

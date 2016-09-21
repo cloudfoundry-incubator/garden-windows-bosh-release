@@ -23,3 +23,7 @@ golang/go1.6.2.windows-amd64.zip:
   object_id: d74a7750-ac33-4954-b2ac-df4b6d10fcc6
   sha: 9fc1628ce5e4f4fc65817fa938fa5f95b99612e1
   size: 91785149
+golang/go1.7.windows-amd64.zip:
+  object_id: 2da62893-617e-45a2-9292-820007ca67fc
+  sha: e276c4b9093369706591ce5d21dfa799b9e0a475
+  size: 88793699

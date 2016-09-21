@@ -1,7 +1,3 @@
-[submodule "src/loggregator"]
-	path = src/loggregator
-	url = https://github.com/pivotal-cf/loggregator
-	branch = metron-windows-job
 [submodule "src/consul-release"]
 	path = src/consul-release
 	url = https://github.com/greenhouse-org/consul-release.git

@@ -1,3 +1,6 @@
 [submodule "src/consul-release"]
 	path = src/consul-release
 	url = https://github.com/greenhouse-org/consul-release.git
+[submodule "src/loggregator"]
+	path = src/loggregator
+	url = https://github.com/cloudfoundry/loggregator

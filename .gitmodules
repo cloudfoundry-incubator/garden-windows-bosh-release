@@ -4,3 +4,6 @@
 [submodule "src/loggregator"]
 	path = src/loggregator
 	url = https://github.com/cloudfoundry/loggregator
+[submodule "src/diego-release"]
+	path = src/diego-release
+	url = https://github.com/greenhouse-org/diego-release

@@ -1,0 +1,10 @@
+---
+name: hakim
+description: "hakim diagnostics"
+
+templates: {}
+
+packages:
+- hakim
+
+properties: {}

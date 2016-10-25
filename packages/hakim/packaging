@@ -1,0 +1,21 @@
+try {
+    $BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
+
+    $pkg_name="hakim"
+    $env:GOROOT="C:\var\vcap\packages\go-windows\go"
+    $env:GOPATH="${PWD}\hakim\vendor;${PWD}\hakim"
+    $env:PATH="${env:GOROOT}\bin;${env:PATH}"
+
+    go build -o "${BOSH_INSTALL_TARGET}\${pkg_name}.exe" "${pkg_name}"
+
+    if($LASTEXITCODE -ne 0)
+    {
+      Write-Error "Failed compiling ${pkg_name}"
+      Exit 1
+    }
+} catch {
+    Write-Error $_.Exception.Message
+    Exit 1
+}
+
+Exit 0

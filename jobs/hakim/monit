@@ -1,0 +1,9 @@
+{
+  "processes": [
+    {
+      "name": "hakim",
+      "executable": "C:\\var\\vcap\\packages\\hakim\\hakim.exe",
+      "args": ["-loop", "30"]
+    }
+  ]
+}

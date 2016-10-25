@@ -27,3 +27,7 @@ golang/go1.7.windows-amd64.zip:
   object_id: 2da62893-617e-45a2-9292-820007ca67fc
   sha: e276c4b9093369706591ce5d21dfa799b9e0a475
   size: 88793699
+golang/go1.7.3.windows-amd64.zip:
+  object_id: 36162d2b-361c-4df6-98a5-1e71d30af439
+  sha: d10f32a97baa97344af80b6fa61374debe12124f
+  size: 88850225

@@ -1,0 +1,7 @@
+---
+name: go-windows
+
+dependencies: []
+
+files:
+- golang/go1.7.3.windows-amd64.zip

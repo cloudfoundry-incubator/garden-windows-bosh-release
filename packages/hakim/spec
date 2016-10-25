@@ -1,0 +1,8 @@
+---
+name: hakim
+
+dependencies:
+- go-windows
+
+files:
+- hakim/**/*

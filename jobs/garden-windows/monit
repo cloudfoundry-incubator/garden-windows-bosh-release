@@ -3,7 +3,7 @@
     {
       "name": "garden-windows",
       "executable": "C:\\var\\vcap\\packages\\garden-windows\\garden-windows.exe",
-      "args": [ "-listenNetwork=tcp",  "-listenAddr=127.0.0.1:9241", "-containerGraceTime=5m", "-containerizerURL=http://localhost:1788" ],
+      "args": ["-listenNetwork=tcp",  "-listenAddr=127.0.0.1:9241", "-containerGraceTime=5m", "-containerizerURL=http://localhost:1788"],
       "env": {
         "__PIPE_SYSLOG_HOST": "<%= p('syslog_daemon_config.address') %>",
         "__PIPE_SYSLOG_PORT": "<%= p('syslog_daemon_config.port') %>",
@@ -12,8 +12,8 @@
     },
     {
       "name": "containerizer",
-      "executable": "powershell",
-      "args": ["/var/vcap/jobs/garden-windows/bin/containerizer.ps1" ],
+      "executable": "C:\\var\\vcap\\packages\\garden-windows\\Containerizer.exe",
+      "args": ["--machineIp", "<%= spec.networks.to_h.values.first.ip %>", "--port", "1788"],
       "env": {
         "__PIPE_SYSLOG_HOST": "<%= p('syslog_daemon_config.address') %>",
         "__PIPE_SYSLOG_PORT": "<%= p('syslog_daemon_config.port') %>",

@@ -1,0 +1,85 @@
+---
+packages:
+- name: confab-windows
+  version: e2eed0fd8de070198913b8abb2f155607cafba31
+  fingerprint: e2eed0fd8de070198913b8abb2f155607cafba31
+  sha1: c1193afa622320a769ff3cf3750046470ccb6c71
+  dependencies:
+  - golang1.6-windows
+- name: consul-windows
+  version: a095f92d8c35bf89533ede099ab91fd424f60447
+  fingerprint: a095f92d8c35bf89533ede099ab91fd424f60447
+  sha1: 0feb1e0ec442299878c59f444bd2f416f948acba
+  dependencies: []
+- name: garden-windows
+  version: 6978fe77048f4c83ec5f72c7fcf518e942278f08
+  fingerprint: 6978fe77048f4c83ec5f72c7fcf518e942278f08
+  sha1: 8980ca0c4b7fbaa40fa223267be3465f813b912f
+  dependencies: []
+- name: go-windows
+  version: 1bf77a894359f4eb5d5820f7dad9c9887dce2a2e
+  fingerprint: 1bf77a894359f4eb5d5820f7dad9c9887dce2a2e
+  sha1: 8356fc66caaf58078c77a1171cf1cca47113ef1d
+  dependencies: []
+- name: golang-windows
+  version: 4ca14257bd9fc8ee124e0c32af0127437ad03791
+  fingerprint: 4ca14257bd9fc8ee124e0c32af0127437ad03791
+  sha1: 8157e83a0f271e068e8915cd5e8db6c3d52d6be3
+  dependencies: []
+- name: golang1.6-windows
+  version: 087f36387be4bd4c2f92d33decdf2caa8d844575
+  fingerprint: 087f36387be4bd4c2f92d33decdf2caa8d844575
+  sha1: 2a96a70b80eeee2e12e9509e2e8ac0b1a59099ca
+  dependencies: []
+- name: golang1.7-windows
+  version: b179e460d5d151def77ad8cb43c4043736bba984
+  fingerprint: b179e460d5d151def77ad8cb43c4043736bba984
+  sha1: eb9416536e30017e5cb113cc5673514e787e7d6b
+  dependencies: []
+- name: hakim
+  version: 6d7f49f282a35310c4f8732500e7fe2ed4ce9dd5
+  fingerprint: 6d7f49f282a35310c4f8732500e7fe2ed4ce9dd5
+  sha1: 92ddae4abba6d10b10618ff55eea2eaaa890ad8b
+  dependencies:
+  - go-windows
+- name: metron_agent_windows
+  version: 557e7ddc6c316edd66fb325e2565763411ca48d2
+  fingerprint: 557e7ddc6c316edd66fb325e2565763411ca48d2
+  sha1: 9e43a16781507ddf9daac690ebcfeed890b9619b
+  dependencies:
+  - golang1.7-windows
+- name: rep_windows
+  version: 8a5a14180161467e702bee8a2e9d259d399c7f4a
+  fingerprint: 8a5a14180161467e702bee8a2e9d259d399c7f4a
+  sha1: d5df064f25b63b9fde77bcf9032f92aca3ec5ca1
+  dependencies:
+  - golang-windows
+jobs:
+- name: consul_agent_windows
+  version: 8aca461b81220305eec290f3bcf2704caee1324c
+  fingerprint: 8aca461b81220305eec290f3bcf2704caee1324c
+  sha1: 0a4a090a774d938dcaf0610c269e4e27f2f12635
+- name: garden-windows
+  version: 7fab185d2d51ca6b43b9af02756b616f6af86545
+  fingerprint: 7fab185d2d51ca6b43b9af02756b616f6af86545
+  sha1: 891b0ca987ec70bce353fa20aa1af86bbaceb348
+- name: hakim
+  version: 1771021d33e6e4d7416c9bd76c92ce490f4e5fb5
+  fingerprint: 1771021d33e6e4d7416c9bd76c92ce490f4e5fb5
+  sha1: 68798e2c388699cf267242f92c44c0390e8ccd51
+- name: metron_agent_windows
+  version: 872f1455cba8cfcd8d920e09b7b846eacd760a0d
+  fingerprint: 872f1455cba8cfcd8d920e09b7b846eacd760a0d
+  sha1: 74dff51330aa09e9a3cd61594ddfdccf3645aac6
+- name: rep_windows
+  version: 7d9661dfa27724d54453ea3294469a69e2c16816
+  fingerprint: 7d9661dfa27724d54453ea3294469a69e2c16816
+  sha1: b18b9ccc6f77f823afabc1b1addda4178f408c80
+license:
+  version: 08f2aa9f376c717e823b012885bc61cecf8c816e
+  fingerprint: 08f2aa9f376c717e823b012885bc61cecf8c816e
+  sha1: c333ebeb352d5664fd06698db7985b78262bd397
+commit_hash: e0a43928
+uncommitted_changes: false
+name: garden-windows
+version: 0.0.10

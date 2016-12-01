@@ -9,6 +9,27 @@ if($PSVersionTable.PSVersion.Major -lt 4) {
   Write-Error "You must be running Powershell version 4 or greater"
 }
 
+$RequiredFeatures = (
+    "Web-Webserver",
+    "Web-WebSockets",
+    "AS-Web-Support",
+    "AS-NET-Framework",
+    "Web-WHC",
+    "Web-ASP"
+)
+[string] $MissingFeatures = ""
+foreach ($name in $RequiredFeatures) {
+    if (-Not (Get-WindowsFeature -Name $name).Installed) {
+        if ($MissingFeatures.Length -gt 0) {
+            $MissingFeatures += ", "
+        }
+        $MissingFeatures += $name
+    }
+}
+if ($MissingFeatures.Length -gt 0) {
+    Write-Error "Missing required Windows Features: $MissingFeatures.  Please use the most recent stemcell."
+}
+
 function DnsServers($interface) {
   return (Get-DnsClientServerAddress -InterfaceAlias $interface -AddressFamily ipv4 -ErrorAction Stop).ServerAddresses
 }

@@ -3,22 +3,6 @@ garden-windows/garden-windows.tgz:
   object_id: 293edbde-7f2b-4028-a5b8-e373219e9229
   sha: 5f15664a6a47bec9b3f25639d7a4ffae73a387e1
   size: 5501076
-consul/consul-template_0.14.0_linux_amd64.zip:
-  object_id: b50297f7-d2df-4367-b809-8acfc71ad537
-  sha: f932301f69a477253e4e4bf3c60159ea77cf28a8
-  size: 3523492
-consul/consul_0.6.4_linux_amd64.zip:
-  object_id: b7942192-315f-4b61-8130-22d0d4bc0bd1
-  sha: 85de555de27cae126f0f89e762f6136e1c7104b6
-  size: 6206903
-consul-windows/consul_0.6.4_windows_386.zip:
-  object_id: 528c3b37-c9dd-4e1c-970c-5c4368693633
-  sha: df7f30549f8a426afffc16cb2e9af862800e086a
-  size: 5773550
-golang/go1.6.1.linux-amd64.tar.gz:
-  object_id: 0cddb6a5-4ef8-4bbf-9b7a-f70b285f9d08
-  sha: c73492474dcc7a233772d27e948b74468d9f1849
-  size: 84824395
 golang/go1.7.windows-amd64.zip:
   object_id: 2da62893-617e-45a2-9292-820007ca67fc
   sha: e276c4b9093369706591ce5d21dfa799b9e0a475

@@ -30,48 +30,6 @@ if ($MissingFeatures.Length -gt 0) {
     Write-Error "Missing required Windows Features: $MissingFeatures.  Please use the most recent stemcell."
 }
 
-function DnsServers($interface) {
-  return (Get-DnsClientServerAddress -InterfaceAlias $interface -AddressFamily ipv4 -ErrorAction Stop).ServerAddresses
-}
-
-[array]$routeable_interfaces = Get-WmiObject Win32_NetworkAdapterConfiguration | Where { $_.IpAddress -AND ($_.IpAddress | Where { $addr = [Net.IPAddress] $_; $addr.AddressFamily -eq "InterNetwork" -AND ($addr.address -BAND ([Net.IPAddress] "255.255.0.0").address) -ne ([Net.IPAddress] "169.254.0.0").address }) }
-$ifindex = $routeable_interfaces[0].Index
-$interface = (Get-WmiObject Win32_NetworkAdapter | Where { $_.DeviceID -eq $ifindex }).netconnectionid
-$servers = DnsServers($interface)
-if($servers[0] -eq "127.0.0.1")
-{
-  Write-Host "DNS Servers are set correctly."
-}
-else
-{
-  Write-Host "Setting DNS Servers"
-  $newDNS = @("127.0.0.1") + $servers
-  Write-Host $newDNS
-  Set-DnsClientServerAddress -InterfaceAlias $interface -ServerAddresses ($newDNS -join ",")
-  $servers = DnsServers($interface)
-  if($servers[0] -ne "127.0.0.1") {
-    Write-Error "Failed to set the DNS Servers"
-  }
-}
-
-if (@(Get-DnsClientCache).Count -ne 0) {
-  Clear-DnsClientCache
-  if (@(Get-DnsClientCache).Count -ne 0) {
-    Write-Error "Failed to clear DNS Client Cache"
-  }
-}
-$RegistryPath = "HKLM:\SYSTEM\CurrentControlSet\Services\Dnscache\Parameters"
-$ExpectedValue = 0
-$Value = Get-ItemProperty -Path $RegistryPath
-
-if ($Value.MaxNegativeCacheTtl -ne $ExpectedValue) {
-  Set-ItemProperty -Path $RegistryPath -Name MaxNegativeCacheTtl -Value $ExpectedValue -Type DWord
-  $Value = Get-ItemProperty -Path $RegistryPath
-  if ($Value.MaxNegativeCacheTtl -ne $ExpectedValue) {
-    Write-Error "Error: Expected MaxNegativeCacheTtl to be '${ExpectedValue}', got '${Value.MaxNegativeCacheTtl}'"
-  }
-}
-
 $query = "select * from Win32_QuotaSetting where VolumePath='C:\\'"
 if (@(Get-WmiObject -query $query).State -ne 2) {
   fsutil quota enforce C:

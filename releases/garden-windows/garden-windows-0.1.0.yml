@@ -1,0 +1,35 @@
+---
+packages:
+- name: garden-windows
+  version: 6978fe77048f4c83ec5f72c7fcf518e942278f08
+  fingerprint: 6978fe77048f4c83ec5f72c7fcf518e942278f08
+  sha1: 8980ca0c4b7fbaa40fa223267be3465f813b912f
+  dependencies: []
+- name: go-windows
+  version: d185f9c70652052c8a1a09a2f3ff9969510f4fda
+  fingerprint: d185f9c70652052c8a1a09a2f3ff9969510f4fda
+  sha1: 60e5694aae06681d7febb105f432cd440b7986dc
+  dependencies: []
+- name: hakim
+  version: 6d7f49f282a35310c4f8732500e7fe2ed4ce9dd5
+  fingerprint: 6d7f49f282a35310c4f8732500e7fe2ed4ce9dd5
+  sha1: 92ddae4abba6d10b10618ff55eea2eaaa890ad8b
+  dependencies:
+  - go-windows
+jobs:
+- name: garden-windows
+  version: de15627914caf32c3c602e0254b3e659014712fa
+  fingerprint: de15627914caf32c3c602e0254b3e659014712fa
+  sha1: cff40064c20876c34ebb851bbdc3c33085baafab
+- name: hakim
+  version: 1771021d33e6e4d7416c9bd76c92ce490f4e5fb5
+  fingerprint: 1771021d33e6e4d7416c9bd76c92ce490f4e5fb5
+  sha1: 68798e2c388699cf267242f92c44c0390e8ccd51
+license:
+  version: 08f2aa9f376c717e823b012885bc61cecf8c816e
+  fingerprint: 08f2aa9f376c717e823b012885bc61cecf8c816e
+  sha1: c333ebeb352d5664fd06698db7985b78262bd397
+commit_hash: 42d08e45
+uncommitted_changes: false
+name: garden-windows
+version: 0.1.0

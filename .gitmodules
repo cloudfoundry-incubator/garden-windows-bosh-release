@@ -1,12 +1,3 @@
-[submodule "src/consul-release"]
-	path = src/consul-release
-	url = https://github.com/greenhouse-org/consul-release.git
-[submodule "src/loggregator"]
-	path = src/loggregator
-	url = https://github.com/cloudfoundry/loggregator
-[submodule "src/diego-release"]
-	path = src/diego-release
-	url = https://github.com/greenhouse-org/diego-release
 [submodule "src/hakim"]
 	path = src/hakim
 	url = https://github.com/cloudfoundry-incubator/hakim.git

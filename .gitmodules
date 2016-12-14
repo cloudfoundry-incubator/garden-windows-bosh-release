@@ -1,6 +1,8 @@
 [submodule "src/hakim"]
 	path = src/hakim
 	url = https://github.com/cloudfoundry-incubator/hakim.git
+	branch = master
 [submodule "src/wats"]
 	path = src/wats
-	url = git@github.com:cloudfoundry/wats
+	url = https://github.com/cloudfoundry/wats.git
+	branch = master

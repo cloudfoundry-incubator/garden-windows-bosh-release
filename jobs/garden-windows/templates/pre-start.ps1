@@ -9,6 +9,14 @@ if($PSVersionTable.PSVersion.Major -lt 4) {
   Write-Error "You must be running Powershell version 4 or greater"
 }
 
+$RepPort = 1800
+if (-Not (Get-NetFirewallRule | Where-Object { $_.DisplayName -eq "RepPort" })) {
+  New-NetFirewallRule -DisplayName "RepPort" -Action Allow -Direction Inbound -Enabled True -LocalPort $RepPort -Protocol TCP
+  if (-Not (Get-NetFirewallRule | Where-Object { $_.DisplayName -eq "RepPort" })) {
+    Write-Error "Unable to add RepPort firewall rule"
+  }
+}
+
 $RequiredFeatures = (
     "Web-Webserver",
     "Web-WebSockets",

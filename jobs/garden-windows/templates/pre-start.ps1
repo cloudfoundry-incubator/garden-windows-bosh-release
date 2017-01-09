@@ -58,6 +58,24 @@ if ($Value.Windows -ne $ExpectedValue) {
   }
 }
 
+# Check firewall rules
+function get-firewall {
+	param([string] $profile)
+	$firewall = (Get-NetFirewallProfile -Name $profile)
+	$result = "{0},{1},{2}" -f $profile,$firewall.DefaultInboundAction,$firewall.DefaultOutboundAction
+	return $result
+}
+
+function check-firewall {
+	param([string] $profile)
+	$firewall = (get-firewall $profile)
+	Write-Host $firewall
+	if ($firewall -ne "$profile,Block,Block") {
+		Write-Host $firewall
+		Write-Error "Unable to set $profile Profile"
+	}
+}
+
 $anyFirewallsDisabled = !!(Get-NetFirewallProfile -All | Where-Object { $_.Enabled -eq "False" })
 $adminRuleMissing = !(Get-NetFirewallRule -Name CFAllowAdmins -ErrorAction Ignore)
 if ($anyFirewallsDisabled -or $adminRuleMissing) {
@@ -81,7 +99,10 @@ if ($anyFirewallsDisabled -or $adminRuleMissing) {
     -Enabled True -Profile Any -Action Allow -Direction Outbound `
     -LocalUser $LocalUser
 
-  Set-NetFirewallProfile -All -DefaultInboundAction Allow -DefaultOutboundAction Block -Enabled True
+  Set-NetFirewallProfile -All -DefaultInboundAction Block -DefaultOutboundAction Block -Enabled True
+  check-firewall "public"
+  check-firewall "private"
+  check-firewall "domain"
   $anyFirewallsDisabled = !!(Get-NetFirewallProfile -All | Where-Object { $_.Enabled -eq "False" })
   $adminRuleMissing = !(Get-NetFirewallRule -Name CFAllowAdmins -ErrorAction Ignore)
   if ($anyFirewallsDisabled -or $adminRuleMissing) {

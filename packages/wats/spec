@@ -1,7 +1,0 @@
----
-name: wats
-
-dependencies: []
-
-files:
-- wats/**/*

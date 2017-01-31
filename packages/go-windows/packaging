@@ -5,7 +5,7 @@ try {
     Exit 1
 }
 
-$path="golang/go1.7.4.windows-amd64.zip"
+$path=(Get-ChildItem "golang/go*.windows-amd64.zip").FullName
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 function Unzip

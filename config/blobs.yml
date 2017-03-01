@@ -1,8 +1,8 @@
 ---
 garden-windows/garden-windows.tgz:
-  object_id: f2e17bb7-1473-40ba-848c-754912fc9369
-  sha: 0b2844bbcbc0a961717378f14911722894e62b71
-  size: 5589486
+  object_id: 339c7829-56a6-42e9-940b-7907b1fcd3a1
+  sha: 1d5d93655fd6b5ffaa402e3d0486ce92625a300b
+  size: 5738410
 golang/go1.7.5.windows-amd64.zip:
   object_id: d0c548bf-f908-4cb9-8f99-d91a4b82395c
   sha: edd996b8c76116941ecada7edc138700cc0b5247

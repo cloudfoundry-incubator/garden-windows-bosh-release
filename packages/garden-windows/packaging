@@ -1,4 +1,5 @@
-tar xf garden-windows\garden-windows.tgz --strip-components=1 -C $Env:BOSH_INSTALL_TARGET
+$path=(Get-ChildItem "garden-windows/garden-windows*.tgz").FullName
+tar xf $path --strip-components=1 -C $Env:BOSH_INSTALL_TARGET
 if ($LASTEXITCODE -ne 0) {
     Exit 1
 }

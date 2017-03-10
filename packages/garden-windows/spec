@@ -4,4 +4,4 @@ name: garden-windows
 dependencies: []
 
 files:
-  - garden-windows/garden-windows.tgz
+  - garden-windows/garden-windows*.tgz

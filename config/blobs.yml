@@ -4,6 +4,6 @@ golang/go1.7.5.windows-amd64.zip:
   sha: edd996b8c76116941ecada7edc138700cc0b5247
   size: 90516198
 garden-windows/garden-windows-5b36cd58afc8d87704aa639faa93deee854c7c0e.tgz:
-  object_id: 00029441-bdf5-485c-846b-83b5e4cd7ef3
-  sha: 27b0106a34c478804e88c653077e53649b1aa51c
-  size: 5738904
+  object_id: b051eaf1-a630-4d5a-8ca5-734b1e4fbeb7
+  sha: 2fda8d248d017b7165c30d47849efcc77b4ad0e2
+  size: 5738897

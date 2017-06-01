@@ -1,8 +1,9 @@
-garden-windows/garden-windows-5b36cd58afc8d87704aa639faa93deee854c7c0e.tgz:
-  size: 5738897
-  object_id: b051eaf1-a630-4d5a-8ca5-734b1e4fbeb7
-  sha: 2fda8d248d017b7165c30d47849efcc77b4ad0e2
+---
 golang/go1.8.3.windows-amd64.zip:
   size: 96254597
   object_id: db06376d-ecd6-4d0f-4de8-b5dd8a780638
   sha: 8a539ecd86505aca6e70e7e561a2b5877d91c000
+garden-windows/garden-windows-5b36cd58afc8d87704aa639faa93deee854c7c0e.tgz:
+  object_id: 5f28d4de-fba5-46fa-aa27-818dfbc8eb91
+  sha: 3d9f185823db7dea3955c5299e91a59ce8e2a28a
+  size: 5738893

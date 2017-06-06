@@ -3,7 +3,7 @@ golang/go1.8.3.windows-amd64.zip:
   size: 96254597
   object_id: db06376d-ecd6-4d0f-4de8-b5dd8a780638
   sha: 8a539ecd86505aca6e70e7e561a2b5877d91c000
-garden-windows/garden-windows-5b36cd58afc8d87704aa639faa93deee854c7c0e.tgz:
-  object_id: 5f28d4de-fba5-46fa-aa27-818dfbc8eb91
-  sha: 3d9f185823db7dea3955c5299e91a59ce8e2a28a
-  size: 5738893
+garden-windows/garden-windows-e29a37d5dd111c214dcc2597edc5e8480b6d0f24.tgz:
+  object_id: c860db34-06e6-413b-b099-6b23b166cb6f
+  sha: 8e70935c2ea698b83e93789dd59bd962fb91a0a7
+  size: 5738811

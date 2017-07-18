@@ -13,7 +13,7 @@
     {
       "name": "containerizer",
       "executable": "C:\\var\\vcap\\packages\\garden-windows\\Containerizer.exe",
-      "args": ["--machineIp", "<%= spec.networks.to_h.values.first.ip %>", "--port", "1788"],
+      "args": ["--machineIp", "<%= spec.networks.to_h.values.first.ip %>", "--port", "1788", "--activeProcessLimit", "<%= p('garden.max_container_procs') %>"],
       "env": {
         "__PIPE_SYSLOG_HOST": "<%= p('syslog_daemon_config.address') %>",
         "__PIPE_SYSLOG_PORT": "<%= p('syslog_daemon_config.port') %>",

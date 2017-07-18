@@ -10,6 +10,9 @@ packages:
 - garden-windows
 
 properties:
+  garden.max_container_procs:
+    description: "Max Container Processes (Max Active limit)"
+    default: 10
   syslog_daemon_config.address:
     description: "Syslog host"
     default: ""

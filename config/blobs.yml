@@ -3,7 +3,7 @@ golang/go1.9.windows-amd64.zip:
   size: 109276513
   object_id: 33d0f635-12cd-4b12-688a-3376dc754dbc
   sha: 9f2f0cd3b98c7cab0ed5c55aaa6689e8da754f65
-garden-windows/garden-windows-88f9fd3ad6bbcf300974f467920a335bedea0b79.tgz:
-  object_id: 4517eee4-60a3-488d-87ec-3dc52bcdf767
-  sha: dbd5b0ec96b479b2e17f89c91aa1f4c4e6d049b7
-  size: 5853536
+garden-windows/garden-windows-4cf388f958dfc3cf15a7b93648f9dec5cc2c3e75.tgz:
+  object_id: 12cdbcab-b35e-429b-98ea-bcb4011d934a
+  sha: ef83c8cd502f16848d34be526b776caa1bad31ca
+  size: 5850208

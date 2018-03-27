@@ -1,9 +1,8 @@
----
-golang/go1.9.4.windows-amd64.zip:
-  size: 110960773
-  object_id: 9f64b67f-0a90-428d-7aa9-b48e4aaca248
-  sha: e243d8c2e13e795fc9357c9546a44544a232d529
 garden-windows/garden-windows-d2a2d0df8638197c22c18a8e2e5d4623fb3566ff.tgz:
+  size: 5853315
   object_id: 1cfdc635-61fd-40ea-b7a8-d294707e7892
   sha: db1cbc36f5b292aad99051c43897133b4bc7e17f
-  size: 5853315
+golang/go1.10.windows-amd64.zip:
+  size: 131903498
+  object_id: dd134d62-4c9b-42bd-5655-275026aeaeb3
+  sha: 0b16bc357770b5867df565f80f22842d13d95fd2

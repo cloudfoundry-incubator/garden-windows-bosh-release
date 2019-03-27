@@ -2,7 +2,7 @@
 name: hakim
 
 dependencies:
-- go-windows
+- golang-1.11-windows
 
 files:
 - hakim/**/*

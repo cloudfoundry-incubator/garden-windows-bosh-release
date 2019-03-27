@@ -2,7 +2,7 @@ try {
     $BOSH_INSTALL_TARGET = Resolve-Path $env:BOSH_INSTALL_TARGET
 
     $pkg_name="hakim"
-    $env:GOROOT="C:\var\vcap\packages\go-windows\go"
+    . C:\var\vcap\packages\golang-1.11-windows\bosh\compile.ps1
     $env:GOPATH="${PWD}\hakim\vendor;${PWD}\hakim"
     $env:PATH="${env:GOROOT}\bin;${env:PATH}"
 
